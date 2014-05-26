@@ -128,10 +128,7 @@ class WidgetCompilerPass implements CompilerPassInterface
         $container->setDefinition('gos.core_bundle.widget.registry', $widgetRegistryDefinition);
 
         $widgetTwigExtensionDefinition = new Definition('Gos\Component\Widget\WidgetTwigExtension');
-        $widgetTwigExtensionDefinition->setArguments(array(
-            new Reference('templating'),
-            new Reference('gos.core_bundle.widget.registry')
-        ));
+        $widgetTwigExtensionDefinition->setArguments(array(new Reference('gos.core_bundle.widget.registry')));
         $widgetTwigExtensionDefinition->addTag('twig.extension');
 
         $container->setDefinition('gos.core_bundle.widget_twig_extension', $widgetTwigExtensionDefinition);
