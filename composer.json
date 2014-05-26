@@ -1,0 +1,22 @@
+{
+    "name": "gos/widget",
+    "description": "Make widget easier and reusable !",
+    "keywords": ["Widget", "Twig"],
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Johann Saunier",
+            "email": "johann_27@hotmail.fr"
+        }
+    ],
+    "require":
+    {
+        "php": ">=5.3.0",
+        "twig/twig": "~1.13"
+    },
+    "autoload": {
+        "psr-0": { "Gos\\Component\\Parser\\": "" }
+    },
+    "target-dir": "Gos/Component/Parser"
+}
