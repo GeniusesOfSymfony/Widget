@@ -1,5 +1,7 @@
 #Gos Widget Component#
 
+**This project is currently in developpement, please take care.**
+
 Installation
 -------------
 
