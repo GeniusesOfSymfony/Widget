@@ -1,7 +1,6 @@
 <?php
 namespace Gos\Component\Widget;
 
-use Symfony\Bundle\FrameworkBundle\Templating\EngineInterface;
 use Twig_Extension;
 use Twig_Function_Method;
 

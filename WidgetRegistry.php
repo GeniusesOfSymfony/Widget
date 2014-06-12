@@ -1,7 +1,6 @@
 <?php
 namespace Gos\Component\Widget;
 
-use Symfony\Component\DependencyInjection\Exception\InvalidArgumentException;
 use Symfony\Component\DependencyInjection\Exception\ServiceNotFoundException;
 
 class WidgetRegistry implements WidgetRegistryInterface
@@ -10,7 +9,6 @@ class WidgetRegistry implements WidgetRegistryInterface
      * {@inheritdoc}
      */
     protected $widgets;
-
 
     public function __construct()
     {
