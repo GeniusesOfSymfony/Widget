@@ -32,12 +32,12 @@ class WidgetTwigExtension extends Twig_Extension
      */
     public function getFunctions()
     {
-        return array(
-            'widget' => new Twig_Function_Method($this, 'renderWidget', array(
-                'is_safe' => array('html'),
+        return [
+            'widget' => new Twig_Function_Method($this, 'renderWidget', [
+                'is_safe' => ['html'],
                 'need_environment' => true
-            ))
-        );
+            ])
+        ];
     }
 
     /**
@@ -47,7 +47,7 @@ class WidgetTwigExtension extends Twig_Extension
      *
      * @return string
      */
-    public function renderWidget(\Twig_Environment $environment, $alias, Array $parameters = array())
+    public function renderWidget(\Twig_Environment $environment, $alias, array $parameters = [])
     {
         $widget = $this->widgetRegistry->getWidget($alias);
         $widget->build($parameters);

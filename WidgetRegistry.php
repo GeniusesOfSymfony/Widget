@@ -12,7 +12,7 @@ class WidgetRegistry implements WidgetRegistryInterface
 
     public function __construct()
     {
-        $this->widgets = array();
+        $this->widgets = [];
     }
 
     /**

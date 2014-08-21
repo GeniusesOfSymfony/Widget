@@ -8,7 +8,7 @@ interface WidgetInterface
      *
      * @return mixed
      */
-    public function build(Array $parameters);
+    public function build(array $parameters);
 
     /**
      * @return mixed
@@ -37,5 +37,5 @@ interface WidgetInterface
      *
      * @return mixed
      */
-    public function setData(Array $data = array());
+    public function setData(array $data = []);
 }

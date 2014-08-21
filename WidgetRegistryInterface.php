@@ -7,6 +7,7 @@ interface WidgetRegistryInterface
      * @param WidgetInterface $widget
      *
      * @throws \Symfony\Component\DependencyInjection\Exception\InvalidArgumentException
+     * @return void
      */
     public function addWidget(WidgetInterface $widget);
 

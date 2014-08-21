@@ -16,7 +16,7 @@ abstract class Widget implements WidgetInterface
     /**
      * {@inheritdoc}
      */
-    public function setData(Array $data = array())
+    public function setData(array $data = [])
     {
         $this->data = $data;
     }
