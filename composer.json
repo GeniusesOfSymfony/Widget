@@ -16,9 +16,11 @@
         "twig/twig": "~1.13"
     },
     "autoload": {
-        "psr-0": { "Gos\\Component\\Parser\\": "" }
+        "psr-4": { "Gos\\Component\\Widget\\": "" }
     },
-    "target-dir": "Gos/Component/Parser",
+    "autoload-dev": {
+        "psr-4": { "Gos\\Component\\Widget\\Tests\\": "/Tests" }
+    },
     "extra": {
         "branch-alias": {
             "dev-master": "1.0.x-dev"
